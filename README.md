@@ -30,7 +30,29 @@
 * index.php 文件是入口php
 * Resource.class.php 是静态资源管理框架
 
-## php页面api说明：
+## php页面示例
+
+### 代码
+
+```php
+<html>
+<head>
+    <title></title>
+    <?php css();?> <!-- 在这里输出link标签 -->
+    <?php import('css/demo.css');?> <!-- 收集资源 -->
+    <?php import('css/demo2.css');?> <!-- 收集资源 -->
+</head>
+<body>
+    <img src="img/baidu.png">
+    <div class="test1"></div>
+    <div class="test2"></div>
+    <?php import('js/demo.js');?> <!-- 收集资源 -->
+    <?php js();?> <!-- 在这里输出script标签 -->
+</body>
+</html>
+```
+
+### api说明
 
 * import($id) : 引用一个资源文件，可以是js、css文件
 * css() : 在调用该函数的位置，将 ``import($id)`` 函数收集到的css资源，以``<link href="xxx">``标签的形式输出
