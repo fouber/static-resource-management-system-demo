@@ -37,7 +37,7 @@
 ```php
 <html>
 <head>
-    <title></title>
+    <title>my page</title>
     <?php css();?> <!-- 在这里输出link标签 -->
     <?php import('css/demo.css');?> <!-- 收集资源 -->
     <?php import('css/demo2.css');?> <!-- 收集资源 -->
