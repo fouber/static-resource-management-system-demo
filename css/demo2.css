@@ -1,0 +1,14 @@
+body{
+	border: 1px;
+}
+div{
+	margin-top: 10px;
+	width: 54px;
+	height: 32px;
+}
+.test1{
+	background: url(../img/baidu.png?__sprite);
+}
+.test2{
+	background: url(../img/dianping.png?__sprite);
+}
